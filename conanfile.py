@@ -8,6 +8,8 @@ class BoostCoreConan(ConanFile):
     description = "For a description of this library, please visit http://boost.org/core "
     license = "www.boost.org/users/license.html"
     lib_short_name = "core"
+    requires =  "Boost.Config/1.64.0@bincrafters/testing", \
+                      "Boost.Assert/1.64.0@bincrafters/testing"    
 
     def source(self):
         self.run("git clone --depth=50 --branch=boost-{0} {1}.git"
