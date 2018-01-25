@@ -8,7 +8,8 @@ class BoostCoreConan(ConanFile):
     name = "boost_core"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_core"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["core"]
     is_header_only = True
 
