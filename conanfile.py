@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.68.0@bincrafters/testing")
 
 class BoostCoreConan(base.BoostBaseConan):
     name = "boost_core"
+    version = "1.68.0"
     url = "https://github.com/bincrafters/conan-boost_core"
     lib_short_names = ["core"]
     header_only_libs = ["core"]
